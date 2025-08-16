@@ -11,7 +11,7 @@ const Features = () => {
         </Badge>
       </div>
       <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-full mb-[90px]">
-        <h2 className="text-heading-mobile md:text-heading leading-heading font-[var(--font-weight-heading)]">
+        <h2 className="text-heading-md md:text-heading leading-heading font-[var(--font-weight-heading)]">
           Say goodbye to <br /> Wallet Addresses.
         </h2>
         <p className="text-body-mobile md:text-body leading-body font-[var(--font-weight-body-sm)] max-w-sm">

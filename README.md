@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Project Documentation
 
-First, run the development server:
+## Setup and Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+1. Ensure you have Node.js and npm installed.
+2. Clone the repository: git clone [https://github.com/aslan997/klipai.git]
+3. Install dependencies: npm install
+4. Run the development server: npm run dev
+5. Open [http://localhost:3000](http://localhost:3000) to view the project.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technology Choices
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Next.js 14**: For server-side rendering, routing, and React integration.
+- **Tailwind CSS**: Utility-first styling framework for rapid UI development.
+- **React**: Component-based front-end library.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Figma Design Interpretation
 
-## Learn More
+- Design interpreted using default Tailwind breakpoints (sm, md, lg, xl).
+- Images from Figma required manual cropping due to padding and background issues.
+- Some design decisions were made without full dev tools access, relying on visual matching.
 
-To learn more about Next.js, take a look at the following resources:
+## AI Assistance Documentation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Tools Used**: ChatGPT
+- **Effective Prompts**:
+  - Implement scrolling partner logos (marquee effect) using CSS and Tailwind.
+  - Create blurred linear gradient background effects for Hero section.
+  - Correct and optimize custom `Button` and `Badge` components for Tailwind usage.
+- **Code Sections Assisted**:
+  - Partner section scrolling implementation.
+  - Hero section gradient backgrounds.
+  - Button and Badge component fixes.
+- **Validation**:
+  - Tested UI visually in multiple screen sizes.
+  - Ensured Tailwind classes applied correctly and animations worked.
+- **Challenges Solved**:
+  - Fixing Tailwind class application in custom components.
+  - Seamless marquee animation without duplicating logos.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Responsive Breakpoints
 
-## Deploy on Vercel
+- Tailwind default breakpoints used:
+  - **sm**: 640px
+  - **md**: 768px
+  - **lg**: 1024px
+  - **xl**: 1280px
+  - **2xl**: 1536px
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Assumptions
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Hero and Partner sections adjusted for mobile-first design.
+- Heading and body font sizes use custom CSS variables.
+- Some image dimensions adjusted due to padding in Figma exports.
+
+## Known Issues / Limitations
+
+- Dev tools access for Figma was not given, requiring visual approximation to some extent.
+- Images required online cropping and background removal to match design intent.
+- Some AI-generated solutions needed manual fine-tuning to align with Tailwind and project structure.

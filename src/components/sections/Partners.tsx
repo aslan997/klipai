@@ -14,7 +14,7 @@ const logos = [
 const Partners: React.FC = () => {
   return (
     <div className="overflow-hidden py-6">
-      <p className="text-center text-heading-sm font-[var(--font-weight-body-lg)] mb-[64px] text-[#c4c4c4]">
+      <p className="text-center text-heading-sm font-[var(--font-weight-body-lg)] mb-[64px] text-[#c4c4c4] px-[15px]">
         Partnered with worldwide leading companies
       </p>
       <div className="marquee-wrapper py-[10px]">

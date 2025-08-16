@@ -3,6 +3,7 @@ import React from "react";
 import Card from "./Card";
 import Image from "next/image";
 import { CardData } from "@/types/cardType";
+import clsx from "clsx";
 
 // Assuming images are stored in public/images folder
 const cardData: CardData[] = [
@@ -44,9 +45,10 @@ const FeatureGrid: React.FC = () => {
       {cardData.map((card, index) => (
         <Card
           key={index}
-          className={`relative bg-[#151515] text-white rounded-[20px] p-[35px] relative overflow-hidden ${
+          className={clsx(
+            "relative bg-[#151515] text-white rounded-[20px] p-[35px] overflow-hidden transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl",
             card.isFeatured ? "md:row-span-2" : ""
-          }`}
+          )}
         >
           {card?.showAddIcon && (
             <div className="absolute top-[25px] right-[25px]">
