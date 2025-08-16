@@ -1,8 +1,8 @@
-@import "tailwindcss";
+/* Google Fonts import */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
 
-body {
-  font-family: Sora, sans-serif;
-}
+/* Tailwind */
+@import "tailwindcss";
 
 @theme {
   --font-sora: "Sora", sans-serif;
@@ -15,4 +15,8 @@ body {
   --text-body: 16px;
   --leading-body: 26px;
   --font-weight-body: 400;
+}
+
+body {
+  font-family: var(--font-sora);
 }

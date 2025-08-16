@@ -12,8 +12,9 @@ const Hero = () => {
           Smart control.
         </h1>
         <p className="text-body leading-body font-[var(--font-weight-body)] text-center capitalize mb-[26px]">
-          Klip is Your All-in-One Decentralized Wallet Designed For Security,
-          Flexibility, And Full Ownership.
+          Klip is Your All-in-One Decentralized Wallet{" "}
+          <br/>
+          Designed For Security, Flexibility, And Full Ownership.
         </p>
 
         {/* CTA */}
