@@ -9,10 +9,12 @@
 
   /* Font sizes with line-height and weight */
   --text-heading: 48px;
+  --text-heading-mobile: 38px;
   --leading-heading: 100%;
   --font-weight-heading: 700;
 
   --text-body: 16px;
+  --text-body-mobile: 12px;
   --leading-body: 26px;
   --font-weight-body: 400;
 }

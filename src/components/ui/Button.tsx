@@ -12,12 +12,14 @@ export interface ButtonProps {
   onClick?: () => void;
 }
 
-const baseStyles = "inline-flex items-center justify-center font-medium rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
+const baseStyles =
+  "items-center justify-center font-medium rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
 
 const variantStyles = {
   primary: "bg-[#00FF66] text-black hover:bg-[#00e65c] focus:ring-[#00FF66]",
   secondary: "bg-black text-white hover:bg-gray-900 focus:ring-black",
-  outline: "border border-black text-black hover:bg-black hover:text-white focus:ring-black",
+  outline:
+    "border border-black text-black hover:bg-black hover:text-white focus:ring-black",
 };
 
 const sizeStyles = {
@@ -44,6 +46,7 @@ export default function Button({
         variantStyles[variant],
         sizeStyles[size],
         fullWidth && "w-full",
+        iconLeft || (iconRight && "inline-flex"),
         className
       )}
     >
