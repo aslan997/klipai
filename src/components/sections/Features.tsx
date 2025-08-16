@@ -10,7 +10,7 @@ const Features = () => {
           BENEFIT
         </Badge>
       </div>
-      <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-full mb-[90px]">
+      <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-full mb-[34px] md:mb-[90px] gap-[15px]">
         <h2 className="text-heading-md md:text-heading leading-heading font-[var(--font-weight-heading)]">
           Say goodbye to <br /> Wallet Addresses.
         </h2>
@@ -24,7 +24,7 @@ const Features = () => {
       {/* Add gradient only for the first card */}
       <div
         className="
-      absolute top-[40%] left-0 -translate-x-1/2 -translate-y-1/2 
+      absolute top-[12%] md:top-[40%] left-0 md:left-[200px] -translate-x-1/2 -translate-y-1/2 
       w-full h-48 md:w-[600px] md:h-[600px] 
       -z-10 rounded-full
       bg-gradient-to-r from-[#51FC8B] to-[#51FC8B]/0

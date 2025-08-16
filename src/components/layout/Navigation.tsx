@@ -45,7 +45,10 @@ const Navigation = () => {
         </nav>
 
         {/* Desktop Login */}
-        <Button className="hidden md:inline-flex px-6 py-2 bg-[#00FF66] text-black rounded-full font-semibold text-sm hover:opacity-90 transition">
+        <Button
+          className="hidden md:inline-flex px-6 py-2 rounded-full font-semibold text-sm hover:opacity-90 transition"
+          variant="primary"
+        >
           Login
         </Button>
 

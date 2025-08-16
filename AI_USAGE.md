@@ -1,4 +1,4 @@
-AI Usage Documentation
+## *AI Usage Documentation
 
 This document outlines how AI tools were leveraged during development of this project, including tools used, prompts, generated code, validation methods, and challenges solved.
 

@@ -24,7 +24,7 @@ const Hero = () => {
           />
 
           {/* Paragraph + CTA */}
-          <div className="w-full md:w-1/2 text-center mt-6 md:mt-0">
+          <div className="w-full md:w-1/2 text-center mt-6 md:mt-0 z-[1]">
             <p className="text-body-sm md:text-body-lg leading-body font-[var(--font-weight-body)] capitalize mb-[26px]">
               Klip is Your All-in-One Decentralized Wallet <br />
               Designed For Security, Flexibility, And Full Ownership.

@@ -14,7 +14,7 @@ const logos = [
 const Partners: React.FC = () => {
   return (
     <div className="overflow-hidden py-6">
-      <p className="text-center text-heading-sm font-[var(--font-weight-body-lg)] mb-[64px] text-[#c4c4c4] px-[15px]">
+      <p className="text-center text-heading-sm font-[var(--font-weight-body-lg)] mb-[64px] text-[#c4c4c4]">
         Partnered with worldwide leading companies
       </p>
       <div className="marquee-wrapper py-[10px]">
@@ -29,12 +29,7 @@ const Partners: React.FC = () => {
                 alt={`Partner ${(index % logos.length) + 1}`}
                 width={120}
                 height={45}
-                style={{
-                  height: "100%",
-                  width: "auto",
-                  objectFit: "contain",
-                  display: "block",
-                }}
+                className="h-[100%] w-auto object-contain block"
                 unoptimized
               />
             </div>
