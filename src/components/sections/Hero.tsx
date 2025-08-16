@@ -33,8 +33,8 @@ const Hero = () => {
             <div className="mt-6">
               <Button
                 variant="primary"
-                size="md"
                 iconRight={<ArrowRight size={16} />}
+                size="lg"
               >
                 GET STARTED
               </Button>

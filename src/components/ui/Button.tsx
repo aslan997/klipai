@@ -1,16 +1,5 @@
-import { ReactNode } from "react";
+import { ButtonProps } from "@/types/buttonType";
 import clsx from "clsx";
-
-export interface ButtonProps {
-  children: ReactNode;
-  variant?: "primary" | "secondary" | "outline";
-  size?: "sm" | "md" | "lg";
-  fullWidth?: boolean;
-  iconLeft?: ReactNode;
-  iconRight?: ReactNode;
-  className?: string;
-  onClick?: () => void;
-}
 
 const baseStyles =
   "items-center justify-center font-medium rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
@@ -23,9 +12,9 @@ const variantStyles = {
 };
 
 const sizeStyles = {
-  sm: "px-4 py-2 text-sm",
-  md: "px-6 py-3 text-base",
-  lg: "px-8 py-4 text-lg",
+  sm: "px-4 py-2 text-[14px]",
+  md: "px-6 py-3 text-[14px]",
+  lg: "px-10.5 py-4 text-[14px]",
 };
 
 export default function Button({
@@ -35,6 +24,8 @@ export default function Button({
   fullWidth = false,
   iconLeft,
   iconRight,
+  width,
+  height,
   className,
   onClick,
 }: ButtonProps) {
@@ -46,13 +37,15 @@ export default function Button({
         variantStyles[variant],
         sizeStyles[size],
         fullWidth && "w-full",
-        iconLeft || (iconRight && "inline-flex"),
+        width && `w-[${width}px]`,
+        height && `h-[${height}px]`,
+        (iconLeft || iconRight) && "inline-flex",
         className
       )}
     >
-      {iconLeft && <span className="mr-2">{iconLeft}</span>}
+      {iconLeft && <span className="mr-4">{iconLeft}</span>}
       {children}
-      {iconRight && <span className="ml-2">{iconRight}</span>}
+      {iconRight && <span className="ml-4">{iconRight}</span>}
     </button>
   );
 }

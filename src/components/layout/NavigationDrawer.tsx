@@ -3,17 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import Button from "../ui/Button";
-
-interface NavLink {
-  label: string;
-  href: string;
-}
-
-interface NavigationDrawerProps {
-  isOpen: boolean;
-  setIsOpen: (value: boolean) => void;
-  navLinks: NavLink[];
-}
+import { NavigationDrawerProps } from "@/types/navType";
 
 const NavigationDrawer: React.FC<NavigationDrawerProps> = ({
   isOpen,

@@ -2,12 +2,7 @@
 import React from "react";
 import Card from "./Card";
 import Image from "next/image";
-
-interface CardData {
-  title: string;
-  imageUrl: string; // added imageUrl
-  className?: string;
-}
+import { CardData } from "@/types/cardType";
 
 // Assuming images are stored in public/images folder
 const cardData: CardData[] = [

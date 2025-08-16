@@ -4,11 +4,12 @@ import NavigationDrawer from "./NavigationDrawer";
 import Link from "next/link";
 import Image from "next/image";
 import Button from "../ui/Button";
+import { NavType } from "@/types/navType";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const navLinks = [
+  const navLinks: NavType[] = [
     { label: "What is KlipAI", href: "#" },
     { label: "Send KlapAI", href: "#" },
     { label: "AI Agent", href: "#" },
