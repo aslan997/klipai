@@ -2,7 +2,7 @@ import { ButtonProps } from "@/types/buttonType";
 import clsx from "clsx";
 
 const baseStyles =
-  "items-center justify-center font-medium rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2";
+  "items-center justify-center font-medium rounded-full transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer";
 
 const variantStyles = {
   primary: "bg-[#00FF66] text-black hover:bg-[#00e65c] focus:ring-[#00FF66]",

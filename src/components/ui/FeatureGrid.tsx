@@ -51,15 +51,19 @@ const FeatureGrid: React.FC = () => {
           )}
         >
           {card?.showAddIcon && (
-            <div className="absolute top-[25px] right-[25px]">
-              <Image
-                src="/icons/add-icon.svg"
-                alt="Feature Icon"
-                width={35}
-                height={35}
-              />
+            <div className="absolute top-[25px] right-[25px] group">
+              <div className="w-[50px] h-[50px] flex items-center justify-center rounded-full bg-transparent hover:bg-white/10 transition-colors duration-300 ease-in-out cursor-pointer">
+                <Image
+                  src="/icons/add-icon.svg"
+                  alt="Feature Icon"
+                  width={35}
+                  height={35}
+                  className="transition-transform duration-300 ease-in-out group-hover:scale-110"
+                />
+              </div>
             </div>
           )}
+
           {card.isFeatured && (
             <Image
               src="/icons/token-icon.svg"
