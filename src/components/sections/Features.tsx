@@ -4,9 +4,11 @@ import Badge from "../ui/Badge";
 
 const Features = () => {
   return (
-    <div className="container mx-auto mb-[85px] px-[15px]">
+    <div className="container relative mx-auto mb-[85px] px-[15px]">
       <div className="mb-[32px]">
-        <Badge height={40} width={96}>BENEFIT</Badge>
+        <Badge height={40} width={96}>
+          BENEFIT
+        </Badge>
       </div>
       <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-full mb-[90px]">
         <h2 className="text-heading-mobile md:text-heading leading-heading font-[var(--font-weight-heading)]">
@@ -19,6 +21,16 @@ const Features = () => {
       </div>
 
       <FeatureGrid />
+      {/* Add gradient only for the first card */}
+      <div
+        className="
+      absolute top-[40%] left-0 -translate-x-1/2 -translate-y-1/2 
+      w-full h-48 md:w-[600px] md:h-[600px] 
+      -z-10 rounded-full
+      bg-gradient-to-r from-[#51FC8B] to-[#51FC8B]/0
+      blur-[100px]
+    "
+      />
     </div>
   );
 };

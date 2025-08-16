@@ -6,4 +6,6 @@ export interface CardProps {
 export interface CardData {
   title: string;
   imageUrl: string;
+  showAddIcon: boolean;
+  isFeatured: boolean;
 }
