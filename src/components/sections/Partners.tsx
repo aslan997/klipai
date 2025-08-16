@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import "@/styles/partners.css";
 
-const logos = [
+const logos: string[] = [
   "/icons/logo1.svg",
   "/icons/logo2.svg",
   "/icons/logo3.svg",
