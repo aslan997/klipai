@@ -3,7 +3,7 @@ import FeatureGrid from "../ui/FeatureGrid";
 
 const Features = () => {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto mb-[85px]">
       <div className="flex flex-wrap md:flex-nowrap items-center justify-between w-full mb-[90px]">
         <h2 className="text-heading leading-heading font-[var(--font-weight-heading)]">
           Say goodbye to <br /> Wallet Addresses.
