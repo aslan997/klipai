@@ -1,6 +1,6 @@
-
 import React from "react";
 import Image from "next/image";
+import "@/styles/partners.css";
 
 const logos = [
   "/icons/logo1.svg",
@@ -14,19 +14,27 @@ const logos = [
 const Partners: React.FC = () => {
   return (
     <div className="overflow-hidden py-6">
-      <p className="text-center text-lg font-semibold mb-16 text-[#c4c4c4]">
+      <p className="text-center text-heading-sm font-[var(--font-weight-body-lg)] mb-[64px] text-[#c4c4c4]">
         Partnered with worldwide leading companies
       </p>
-
-      <div className="relative w-full overflow-hidden">
-        <div className="flex animate-marquee whitespace-nowrap">
+      <div className="marquee-wrapper py-[10px]">
+        <div className="marquee-content">
           {[...logos, ...logos].map((logo, index) => (
-            <div key={index} className="flex-shrink-0 w-1/6 h-[45px] relative">
+            <div
+              key={index}
+              className="flex-shrink-0 h-[45px] mx-8 flex items-center"
+            >
               <Image
                 src={logo}
-                alt={`Partner ${index + 1}`}
-                fill
-                style={{ objectFit: "contain" }}
+                alt={`Partner ${(index % logos.length) + 1}`}
+                width={120}
+                height={45}
+                style={{
+                  height: "100%",
+                  width: "auto",
+                  objectFit: "contain",
+                  display: "block",
+                }}
                 unoptimized
               />
             </div>

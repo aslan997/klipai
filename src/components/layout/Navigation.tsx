@@ -37,7 +37,7 @@ const Navigation = () => {
             <Link
               key={link.label}
               href={link.href}
-              className="text-[#F6E9E9] text-body-mobile lg:text-body leading-body font-[var(--font-weight-body)] hover:text-[#00FF66] transition-colors"
+              className="text-[#F6E9E9] text-body-sm lg:text-body-lg leading-body font-[var(--font-weight-body)] hover:text-[#00FF66] transition-colors"
             >
               {link.label}
             </Link>

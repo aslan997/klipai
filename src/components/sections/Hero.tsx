@@ -7,7 +7,7 @@ const Hero = () => {
     <section className="relative pt-[80px] pb-24 px-[15px]">
       <div className="container mx-auto px-6 relative">
         {/* Heading stays at top */}
-        <h1 className="text-heading-mobile md:text-heading leading-heading font-[var(--font-weight-heading)] text-center mb-[17px]">
+        <h1 className="text-heading-md md:text-heading leading-heading font-[var(--font-weight-heading)] text-center mb-[17px]">
           AI receipts. Simple crypto. <br className="hidden md:block" />
           Smart control.
         </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
 
           {/* Paragraph + CTA */}
           <div className="w-full md:w-1/2 text-center mt-6 md:mt-0">
-            <p className="text-body-mobile md:text-body leading-body font-[var(--font-weight-body)] capitalize mb-[26px]">
+            <p className="text-body-sm md:text-body-lg leading-body font-[var(--font-weight-body)] capitalize mb-[26px]">
               Klip is Your All-in-One Decentralized Wallet <br />
               Designed For Security, Flexibility, And Full Ownership.
             </p>

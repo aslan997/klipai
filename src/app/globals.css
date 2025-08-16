@@ -7,16 +7,24 @@
 @theme {
   --font-sora: "Sora", sans-serif;
 
-  /* Font sizes with line-height and weight */
+  /* Headings */
   --text-heading: 48px;
-  --text-heading-mobile: 38px;
-  --leading-heading: 100%;
-  --font-weight-heading: 700;
+  --text-heading-md: 38px;
+  --text-heading-sm: 24px;
 
-  --text-body: 16px;
-  --text-body-mobile: 12px;
+  /* Body */
+  --text-body-lg: 16px;
+  --text-body-md: 14px;
+  --text-body-sm: 12px;
+
+  /* Line-heights */
+  --leading-heading: 100%;
   --leading-body: 26px;
+
+  /* Font weights */
+  --font-weight-heading: 700;
   --font-weight-body: 400;
+  --font-weight-body-lg: 500;
 }
 
 body {
