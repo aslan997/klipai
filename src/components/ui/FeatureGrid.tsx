@@ -15,11 +15,11 @@ const cardData: CardData[] = [
     imageUrl: "/images/card.svg",
   },
   {
-    title: "Performance",
+    title: "",
     imageUrl: "/images/performance.svg",
   },
   {
-    title: "Current Balance",
+    title: "",
     imageUrl: "/images/current-balance.svg",
   },
   {
@@ -34,21 +34,31 @@ const FeatureGrid: React.FC = () => {
       {cardData.map((card, index) => (
         <Card
           key={index}
-          className={`bg-[#151515] text-white rounded-[20px] p-4 ${
+          className={`bg-[#151515] text-white rounded-[20px] p-[35px] relative ${
             index === 0 ? "md:row-span-2" : ""
           }`}
         >
-          <h3 className="text-lg font-semibold mb-4">{card.title}</h3>
+          <div className="absolute top-[25px] right-[25px]">
+            <Image
+              src="/icons/add-icon.svg"
+              alt="Feature Icon"
+              width={35}
+              height={35}
+            />
+          </div>
+          <h3 className="text-heading-md text-center md:text-heading-sm leading-heading font-[var(--font-weight-body)] mb-4">
+            {card.title ? card.title : ""}
+          </h3>
           {card.imageUrl && (
-            <div className="relative w-full h-32 mb-4 rounded-lg overflow-hidden">
+            <div className="relative w-full h-[330px] rounded-lg overflow-hidden">
               <Image
                 src={card.imageUrl}
                 alt={card.title}
-                // fill
-                // style={{ objectFit: "cover" }}
-                // priority={true} // optional, for important images
-                width={230}
-                height={330}
+                fill
+                style={{ objectFit: "contain" }}
+                priority={true} // optional, for important images
+                // width={230}
+                // height={330}
               />
             </div>
           )}

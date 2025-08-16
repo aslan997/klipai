@@ -24,6 +24,7 @@
   /* Font weights */
   --font-weight-heading: 700;
   --font-weight-body: 400;
+  --font-weight-body-sm: 300;
   --font-weight-body-lg: 500;
 }
 
